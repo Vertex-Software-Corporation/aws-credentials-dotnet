@@ -13,7 +13,7 @@ dotnet add package VertexAWSProvider
 ```csharp
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
-using AwsCustomProvider;
+using VertexAWSProvider;
 
 class Program
 {
