@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageId>VertexProvider</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Bond</Authors>
+    <Company>Vertex Software Corporation</Company>
+    <Description>A custom AWS credential provider for .NET applications</Description>
+    <PackageTags>aws credentials provider</PackageTags>
+    <Owners>Vertex-Software</Owners>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.400.43" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.301" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <None Include="readme.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+</Project>
