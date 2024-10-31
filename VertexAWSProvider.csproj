@@ -11,6 +11,8 @@
     <Description>A custom AWS credential provider for .NET applications</Description>
     <PackageTags>aws credentials provider</PackageTags>
     <Owners>Vertex-Software</Owners>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Vertex-Software/VertexAWSProvider.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
