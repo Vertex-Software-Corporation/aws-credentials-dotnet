@@ -12,6 +12,9 @@ namespace VertexAWSProvider
         private readonly AWSCredentials _defaultCredentials;
         private readonly AWSCredentials _customCredentials;
 
+        public VertexProvider() : this("win32", null) { }
+        public VertexProvider(string profile) : this(profile, null) { }
+
         public VertexProvider(string profile, string configPath)
         {
             _defaultCredentials = FallbackCredentialsFactory.GetCredentials();
@@ -19,11 +22,6 @@ namespace VertexAWSProvider
             if (string.IsNullOrEmpty(configPath))
             {
                 configPath = Path.Combine(Directory.GetCurrentDirectory(), "aws.config");
-            }
-
-            if (string.IsNullOrEmpty(profile))
-            {
-                profile = "win32";
             }
 
             var options = new AWSOptions
